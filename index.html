@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodNelle fastfood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="../TRABALHO/3558110-bread-fast-food-hamburger-patty_107820.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="#">Redes Sociais</a></li>
+            </ul>
+        </header>
+        <div class="content">
+         <div class="textBox">
+            <h2>Não é só um Fast Food<br>É <span>FoodNelle</span></h2> 
+            <p>FoodNelle começou como uma pequena empresa,e agora está conquistando o mundo.Somos gratos por termos clientes fíes como vocês. Como agredecimento apresentamos os novos hamburguês: VegeNelle,CheeseNelle,BaconNelle.</p>
+            <a>Aproveite</a>
+            </div>
+            <div class="imgBox">
+                <img src="../TRABALHO/vegetarianoo.png"  class="hamburguer">
+        </div>
+        <ul class="thumb">
+            <li><img src="../TRABALHO/vegetarianoo.png" onclick="imgSlider('vegetarianoo.png');changeCircleColor('#017143')"></li>
+            <li><img src="../TRABALHO/cheese.png" onclick="imgSlider('cheese.png');changeCircleColor('#EFDE2B')"></li>
+            <li><img src="../TRABALHO/cansei.png" onclick="imgSlider('cansei.png');changeCircleColor('#ED3030')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../TRABALHO/social_facebook_fb_35.png"></a></li>
+            <li><a href="#"><img src="..//TRABALHO/social_Twitter_38.png"></a></li>
+            <li><a href="#"><img src="../TRABALHO/instagram_black_logo_icon_147122.png"></a></li>
+        </ul>
+    </section>
+
+    <script  type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.hamburguer').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>    
+</html>
